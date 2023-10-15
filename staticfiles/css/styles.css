@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&display=swap');
+:root {
+    --cor-principal: #835A87;
+    --roxo-secundario: #C78EC8;
+    --cor-clara: #F5F8B8;
+    --cor-escura: #323223;
+
+    --fonte-principal: "Nunito Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+* > h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0;
+}
+body {
+    background-color: var(--cor-clara);
+}
+
+.titulo {
+    font-weight: 700;
+}
+
+
+
+.navbar {
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 64px;
+}
+.navbar > div > a > h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+.navbar-links > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navbar-links > li > a.ativo {
+    text-decoration: underline;
+    color: var(--cor-clara);
+}
+
+.hero-section {
+    height: 50vh;
+    margin-top: 50px;
+}
+
+.hero-section > .banner {
+    background-color: var(--cor-principal);
+    border-radius: 15px;
+}
+
+.hero-section > .banner > h2 {
+    font-weight: 700;
+}
+.hero-section > .banner > h2 > span{
+    color: white;
+}
+.botao-roxo {
+    background-color: var(--roxo-secundario);
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px black solid;
+}
+
+.botao-roxo:hover {
+    background-color: var(--cor-principal);
+    border: 1px black solid;
+    box-shadow: 0px 9px 2px var(--cor-escura);
+}
+
+.botao-roxo:active {
+    background-color: var(--cor-principal);
+    box-shadow:0 5px #666 ;
+    transform: translateY(4px);
+}
+
+.membros {
+    height: 80vh;
+}
+
+.margin-card {
+    margin-top: 50px;
+}
+
+.card {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.card-img-top {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.card-body {
+    background-color: var(--roxo-secundario) !important;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.card-nome {
+    font-weight: 700;
+}
+
+.sobre {
+    height: 80vh;
+}

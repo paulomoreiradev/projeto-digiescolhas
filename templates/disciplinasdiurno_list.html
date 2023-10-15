@@ -1,0 +1,22 @@
+{% load  static %}
+<h1 class="teste">Disciplinas Obrigatórias Diurno</h1>
+<table class="table text-end">
+    <thead class="">
+        <tr>
+            <th scope="col" class="text-start">Código</th>
+            <th scope="col">Componente</th>
+            <th scope="col">Carga Horária</th>
+            <th scope="col">Natureza</th>
+            <th scope="col">Semestre</th>
+        </tr>
+    </thead>
+    {% for disciplinas in object_list %}    
+    <tr scope="row">       
+        <td class="text-start">{{ disciplinas.codigo}}</td>        
+        <td>{{ disciplinas.componente}}</td>        
+        <td>{{ disciplinas.carga_horaria}}H</td>        
+        <td>{{ disciplinas.natureza}}</td>    
+        <td>{{ disciplinas.semestre}}</td>    
+    </tr>
+    {% endfor %}
+</table>
